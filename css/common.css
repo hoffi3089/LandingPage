@@ -1,0 +1,279 @@
+:root {
+    
+    --font-size-h1: 64px;
+    --font-size-h2: 40px;
+    --font-size-h3: 30px;
+    --font-size-h4: 24px;
+    --font-size-h5: 20px;
+    --font-size-h6: 18px;
+    --font-size-p1: 50px;
+    --font-size-p2: 48px;
+    --font-size-p3: 40px;
+    --font-size-p4: 30px;
+    --font-size-p5: 20px;    
+    --font-size-p6: 16px;
+    --font-size-span1: 14px;
+    --font-size-span2: 12px;
+
+    @media (min-width: 1300px) {
+		--font-size-h1: 64px;
+		--font-size-h2: 48px;
+		--font-size-h3: 28px;
+		--font-size-h4: 24px;
+		--font-size-h5: 18px;
+		--font-size-h6: 16px;
+		--font-size-p: 16px;
+	}
+	@media (max-width: 1300px) {
+		--font-size-h1: 64px;
+		--font-size-h2: 48px;
+		--font-size-h3: 28px;
+		--font-size-h4: 24px;
+		--font-size-h5: 18px;
+		--font-size-h6: 16px;
+		--font-size-p: 16px;
+	}
+	@media (max-width: 1024px) {
+		--font-size-h1: 48px;
+		--font-size-h2: 36px;
+		--font-size-h3: 34px;
+		--font-size-h4: 24px;
+		--font-size-h5: 18px;
+		--font-size-h6: 16px;
+		--font-size-p: 16px;
+	}
+	@media (max-width: 768px) {
+		--font-size-h1: 36px;
+		--font-size-h2: 32px;
+		--font-size-h3: 26px;
+		--font-size-h4: 22px;
+		--font-size-h5: 18px;
+		/* --font-size-h6: 16px; */
+		--font-size-p: 16px;
+        --font-size-p6: 12px;
+	}
+}
+
+* {
+    box-sizing: border-box;
+
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Common CSS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    gap: .5em;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.w-50 {
+    position: relative;
+    width: 50%;
+    padding: 1em;
+}
+.col {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.px-30 {
+    padding: 0 1vw;
+}
+
+.pt-30 {
+    padding-top: 1.5vw;
+}
+.pb-30 {
+    padding-bottom: 1.5vw;
+}
+
+.py-30 {
+    padding: 1.5vw 0;
+}
+
+.py-40 {
+    padding: 2vw 0;
+}
+
+.p-60 {
+    padding: 6vw;
+}
+.py-60 {
+    padding: 6vw 0;
+}
+.px-60 {
+    padding: 3vw 6vw;
+}
+.p-1 {
+    padding-top: 1em;
+}
+.p-1 {
+    padding: 1em;
+}
+.m-0 {
+    margin: 0;
+}
+.m-1 {
+    margin: 1em;
+}
+.my-2 {
+    margin: 2em 0;
+}
+.gap-2 {
+    gap: 2em;
+}
+
+.font-size-h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+}
+
+.font-size-h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    text-align: center;
+}
+
+.font-size-h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+}
+.font-size-h5 {
+    font-size: var(--font-size-h5);
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.font-size-h6 {
+    font-size: var(--font-size-h5);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.font-size-p2 {
+    font-size: var(--font-size-p2);
+    font-weight: 400;
+}
+
+.font-size-p3 {
+    font-size: var(--font-size-p3);
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.font-size-p4 {
+    font-size: var(--font-size-p4);
+    font-weight: 400;
+}
+.font-size-p5 {
+    font-size: var(--font-size-p5);
+    font-weight: 400;
+}
+.font-size-p6  {
+    font-size: var(--font-size-p6);
+    font-weight: 700;
+}
+.border-color-brown {
+    border: 1px solid var(--brown);
+}
+
+.border-round {
+    border-radius: 50%;
+}
+
+.radio-style {
+    width: 20px;
+    height: 20px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-dot {
+    width: 10px;
+    height: 10px;   
+}
+
+
+.menu-icon {
+    padding: 5px 8px; 
+    border-radius: 16px;
+}
+
+
+.right-icon {
+    width: 2vw;
+    height: 4vw
+}
+
+a  {
+    text-decoration-color: var(--brown);
+}
